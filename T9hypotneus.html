@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+    
+    <script>
+        var perp = parseInt(prompt("Enter perpendicular")),base = parseInt(prompt("Enter base"));
+        var hypot= calculateHypotenuse(base, perp);
+        function calculateHypotenuse(base, perpendicular)
+        {
+            function calculateSquare()
+            {
+                var hypotenuseSquare = (base*base) + (perp*perp);
+                return hypotenuseSquare;
+            }
+            return Math.sqrt(calculateSquare());
+        }
+        
+
+        document.write("<h2> hypotenuse of a right angle triangle</h2> <br>");
+        document.write("Base = " + base+ "<br>");
+        document.write("Perpendicular = " + perp+"<br>");
+        document.write("Hypotenuse = " + hypot+"<br>");
+    </script>
+</body>
+</html>

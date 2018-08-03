@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+<script>
+	function Sum()
+	{
+		
+		document.getElementById("sum").innerHTML = parseInt(document.getElementById("a").value) + parseInt(document.getElementById("b").value);
+	
+	}
+</script>
+
+
+<h2>Sum of two numbers</h2>
+<input type="text" id="a" placeholder="1 number"/>
+<input type="text" id="b" placeholder="2 number"/>
+<input type="button" value="Sum" onClick="Sum()"/>
+<p id="sum"></p>
+</body>
+</html>

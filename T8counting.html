@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+    
+    <script>
+    	var start = prompt("Enter starting number");
+        var end = prompt("Enter ending number");
+
+        function counting(start, end)
+        {	
+   			document.write("<h2>Counting</h2>");
+            document.write("Start: " + start+"<br>");
+            for(var i = parseInt(start) + 1; i < end; i++)
+            {
+                document.write(i+"<br>");
+            }
+            document.write("End: " + end+"<br>");
+        }
+        counting(start, end);
+    </script>
+</body>
+</html>
